@@ -1,26 +1,32 @@
 const displayPolishArea = document.querySelector("#display-polish-area")
 const searchBar = document.querySelector("#search-bar")
+const nailPolishAPI = "http://makeup-api.herokuapp.com/api/v1/products.json?product_type=nail_polish"
+
+
+
 let allNailPolishes = [];
-
-
-
 const fetchData = async() => {
-    const response = await fetch("http://makeup-api.herokuapp.com/api/v1/products.json?product_type=nail_polish")
+    const response = await fetch(nailPolishAPI)
     allNailPolishes = await response.json()
     displayPolish(allNailPolishes)
     console.log(allNailPolishes)
 }
-
 fetchData();
+
 
 const displayPolish = (polishes) => {
     const polishInfo = polishes.map((polish) => {
         return `
-            <div class="pol bg-yellow-200">
-            <img src="${polish.image_link}"/>
-            <h1>${polish.brand}</h1>
-            </div>
-        `
+                <div class="bg-white border border-red-900 p-4 m-4 w-72">
+                    <img src="${polish.image_link}" class="object-scale-down h-48 w-full"/>
+                    <div class="text-center mt-2">
+                        <h1>${polish.brand.toUpperCase()}</h1>
+                        <p>$ ${polish.price}</p>
+                        <button class="bg-red-200 mt-4"><a href=${polish.product_link}>Click me</button>
+                    </div>
+                </div>
+        
+        `    
     })//.join("")
     displayPolishArea.innerHTML = polishInfo
 
@@ -31,7 +37,7 @@ searchBar.addEventListener("keyup", (e) => {
     const filteredPolish = allNailPolishes.filter(filtPolish => {
         return filtPolish.brand.includes(searchValue)
     })
-    
+
     console.log(filteredPolish)
     displayPolish(filteredPolish)
 })
