@@ -15,7 +15,7 @@ module.exports = {
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
-      neongreen: '#ccff66',
+      neongreen: '#ff9900',
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -26,6 +26,7 @@ module.exports = {
       indigo: colors.indigo,
       purple: colors.violet,
       pink: colors.pink,
+      neon: "#ccff33"
     },
     spacing: {
       px: '1px',
@@ -73,7 +74,6 @@ module.exports = {
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
-      none: 'none',
       'gradient-to-t': 'linear-gradient(to top, var(--tw-gradient-stops))',
       'gradient-to-tr': 'linear-gradient(to top right, var(--tw-gradient-stops))',
       'gradient-to-r': 'linear-gradient(to right, var(--tw-gradient-stops))',
