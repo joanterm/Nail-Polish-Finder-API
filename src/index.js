@@ -17,12 +17,12 @@ fetchData();
 const displayPolish = (polishes) => {
     const polishInfo = polishes.map((polish) => {
         return `
-                <div class="bg-white border border-red-900 p-4 m-4 w-72">
+                <div class="bg-white border border-pink-100 shadow-lg p-4 m-4 w-72">
                     <img src="${polish.image_link}" class="object-scale-down h-48 w-full"/>
-                    <div class="text-center mt-2">
+                    <div class="text-center font-medium mt-2">
                         <h1>${polish.brand.toUpperCase()}</h1>
                         <p>$ ${polish.price}</p>
-                        <button class="bg-red-200 mt-4"><a href=${polish.product_link}>Click me</button>
+                        <button class="bg-pink-100 hover:bg-pink-200 mt-4 px-4 py-2 border rounded-md"><a href=${polish.product_link}>Click me</button>
                     </div>
                 </div>
         
