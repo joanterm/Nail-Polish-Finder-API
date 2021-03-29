@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="src/styles/tailwind.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body class="text-gray-800 font-Questrial">
 <!-- NAVIGATION -->
@@ -76,7 +77,42 @@
         </div>
     </div>
 
-    <div>SLIDER AREA!</div>
+    <div>
+        <div class="border border-red-200 w-9/12 max-w-7xl mx-auto py-24 text-4xl text-pink-500 font-medium">TRENDS.</div>
+    </div>
+    <!-- Slider main container -->
+<div class="swiper-container w-9/12 max-w-7xl mb-24">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="src/images/content-pixie-Slide3.jpg">
+      </div>
+      <div class="swiper-slide">
+          <img src="src/images/daiga-ellaby-Slide2.jpg"/>
+      </div>
+      <div class="swiper-slide">
+          <img src="src/images/sofia-hernandez-Slide4.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="src/images/designecologist-Slide1.jpg"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="src/images/biel-morro-Slide5.jpg"/>
+      </div>
+      ...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+  
 
 
 <!-- NAIL POLISH AREA -->
@@ -97,7 +133,30 @@
 <script src="src/navigationMenu.js"></script>
 <script src="src/genericFunctions.js"></script>
 <script src="src/index.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
 
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+
+</script>
     
     
 </body>
