@@ -163,6 +163,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      Questrial: ['Questrial', "sans-serif"],
       sans: [
         'ui-sans-serif',
         'system-ui',

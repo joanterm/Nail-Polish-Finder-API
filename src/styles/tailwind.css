@@ -1,4 +1,4 @@
-/*! tailwindcss v2.0.3 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
@@ -11397,6 +11397,10 @@ video {
 
 .clear-none {
   clear: none;
+}
+
+.font-Questrial {
+  font-family: Questrial, sans-serif;
 }
 
 .font-sans {
@@ -42372,6 +42376,10 @@ video {
     clear: none;
   }
 
+  .sm\:font-Questrial {
+    font-family: Questrial, sans-serif;
+  }
+
   .sm\:font-sans {
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -73265,6 +73273,10 @@ video {
 
   .md\:clear-none {
     clear: none;
+  }
+
+  .md\:font-Questrial {
+    font-family: Questrial, sans-serif;
   }
 
   .md\:font-sans {
@@ -104162,6 +104174,10 @@ video {
     clear: none;
   }
 
+  .lg\:font-Questrial {
+    font-family: Questrial, sans-serif;
+  }
+
   .lg\:font-sans {
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -135057,6 +135073,10 @@ video {
     clear: none;
   }
 
+  .xl\:font-Questrial {
+    font-family: Questrial, sans-serif;
+  }
+
   .xl\:font-sans {
     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
@@ -165950,6 +165970,10 @@ video {
 
   .\32xl\:clear-none {
     clear: none;
+  }
+
+  .\32xl\:font-Questrial {
+    font-family: Questrial, sans-serif;
   }
 
   .\32xl\:font-sans {

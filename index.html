@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nail Polish Finder</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="src/styles/tailwind.css">
 
 </head>
-<body class="text-gray-800">
+<body class="text-gray-800 font-Questrial">
 <!-- NAVIGATION -->
     <nav class="bg-pink-50">
         <div class="max-w-7xl mx-auto">
@@ -15,10 +17,10 @@
             <a href="#">
                 <svg class="py-2 m-2" id="Capa_1" enable-background="new 0 0 512 512" height="80" viewBox="0 0 512 512" width="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="512" y2="0"><stop offset="0" stop-color="#ffc8d1"/><stop offset="1" stop-color="#fff6f7"/></linearGradient><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="105" y2="407"><stop offset="0" stop-color="#fd3a84"/><stop offset="1" stop-color="#ffa68d"/></linearGradient><g><g><circle cx="256" cy="256" fill="url(#SVGID_1_)" r="256"/></g><g><g><path d="m380.574 254.898-17.765-142.118c-.555-4.441-4.337-7.781-8.813-7.781h-35.53c-4.476 0-8.258 3.34-8.813 7.781l-17.765 142.118c-.321 2.524.469 5.074 2.151 6.983 1.691 1.908 4.112 3.001 6.662 3.001h26.647v53.294c-4.077 0-7.625 2.776-8.614 6.731l-17.765 71.059c-.668 2.654-.069 5.465 1.614 7.616 1.683 2.16 4.268 3.417 7 3.417h53.294c2.732 0 5.317-1.258 7-3.417 1.683-2.151 2.281-4.962 1.613-7.616l-17.765-71.059c-.989-3.956-4.537-6.731-8.614-6.731v-53.294h26.647c2.55 0 4.97-1.093 6.662-3.001 1.685-1.908 2.475-4.458 2.154-6.983zm-168.696 54.396c-14.694 0-26.647 11.953-26.647 26.647s11.953 26.647 26.647 26.647 26.647-11.953 26.647-26.647-11.953-26.647-26.647-26.647zm26.578-196.513c-.555-4.441-4.337-7.781-8.813-7.781h-35.53c-4.476 0-8.258 3.34-8.813 7.781l-16.792 134.337h86.74zm32.422 152.101h-118.555c-8.867 9.858-17.921 24.148-20.316 43.31-4.684 37.438 17.435 91.079 18.381 93.343 1.379 3.305 4.615 5.465 8.197 5.465h105.998c3.583 0 6.818-2.16 8.197-5.465.945-2.264 23.064-55.905 18.38-93.343-2.392-19.131-11.425-33.449-20.282-43.31zm-59 115.471c-24.487 0-44.412-19.925-44.412-44.412s19.925-44.412 44.412-44.412 44.412 19.925 44.412 44.412-19.925 44.412-44.412 44.412z" fill="url(#SVGID_2_)"/></g></g></g></svg>
             </a>
-            <div class="hidden md:block space-x-5 text-gray-800">
-                <a class="border border-red-800 px-4 py-2" href="#">About</a>
-                <a href="#">Mission</a>
-                <a href="#">Collection</a>
+            <div class="hidden md:block space-x-5">
+                <a class="px-4 py-2 text-2xl hover:text-pink-500" href="#">Mission</a>
+                <a class="text-2xl hover:text-pink-500" href="#">Trends</a>
+                <a class="text-2xl hover:text-pink-500"href="#">Collection</a>
             </div>
             <!-- MOBILE -->
             <div class="md:hidden">
@@ -42,31 +44,30 @@
         <div class="w-screen flex flex-col justify-center items-center">
             <div class="text-6xl mb-8 font-medium text-pink-500">Nailspress Yourself.</div>
             <div class="text-2xl mb-8">Created for nail-trend lovers, for art lovers. For you.</div>
-            <button class="font-medium bg-purple-100 hover:bg-purple-200 mt-4 px-8 py-4 rounded-md">Explore</button>
+            <button class="font-medium font-semibold bg-purple-100 hover:bg-purple-200 mt-4 px-8 py-4 rounded-md">Explore</button>
         </div>
         <img class="md:w-2/4" src="src/images/Nails-byElement5-Unsplash.jpg"/>
     </div>
 
-<!-- SECTION -->
-    <div class="bg-purple-200">
+<!-- MISSION SECTION -->
+    <div class="bg-pink-50">
         <div class="w-9/12 max-w-7xl mx-auto py-24">
            <div class="text-2xl leading-relaxed">
-                <div class="pb-24 text-4xl">Mission</div>
+                <div class="pb-24 text-4xl text-pink-500 font-medium">MISSION.</div>
                 <div class="mb-8">Our mission at Nailspress Yourself is to create an atmosphere of paradise, a nail getaway for those looking to detach from their daily routine. We share the hottest nail trends and help you find your perfect polish for any occasion.</div>
-                <div class="mb-8">Our customers love us:</div> 
            </div>
-           <div class="flex flex-col md:flex-row border border-red-800">
-                <div class="border border-green-800 md:w-4/12 md:p-10 text-center">
+           <div class="flex flex-col md:flex-row text-xl">
+                <div class="md:w-4/12 md:p-10 text-center">
                     <div>Anna, 26</div>
                     <img src="src/images/star.png" class="w-10 h-10 mt-2 mb-2 m-auto"/>
                     <div>I love Nailspress Yourself! They helped me find the best nail polish for my wedding day. I got a lot of compliments on it.</div>
                 </div>
-                <div class="border border-green-800 md:w-4/12 md:p-10 text-center">
+                <div class="md:w-4/12 md:p-10 text-center">
                     <div>Jessica, 31</div>
                     <img src="src/images/star.png" class="w-10 h-10 mt-2 mb-2 m-auto"/>
                     <div>I'm a nail polish technician and I always come back for new inspirations. This place keeps up with the fashion.</div>
                 </div>
-                <div class="border border-green-800 md:w-4/12 md:p-10 text-center">
+                <div class="md:w-4/12 md:p-10 text-center">
                     <div>Alex, 20</div>
                     <img src="src/images/star.png" class="w-10 h-10 mt-2 mb-2 m-auto"/>
                     <div>Best nail polish website ever! And their customer service is amazing too. They contacted me right away!</div>
@@ -74,6 +75,8 @@
            </div>
         </div>
     </div>
+
+    <div>SLIDER AREA!</div>
 
 
 <!-- NAIL POLISH AREA -->
