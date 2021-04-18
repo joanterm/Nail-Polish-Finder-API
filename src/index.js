@@ -42,4 +42,3 @@ searchBar.addEventListener("keyup", (e) => {
     displayPolish(filteredPolish)
 })
 
-
