@@ -71,6 +71,7 @@ module.exports = {
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
       pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
+      fadeOut: 'fadeOut 3s ease-in-out infinite'
     },
     backgroundColor: (theme) => theme('colors'),
     backgroundImage: {
@@ -375,6 +376,12 @@ module.exports = {
       '-full': '-100%',
     }),
     keyframes: {
+      fadeOut: {
+        '100%': {
+          opacity: 0,
+          visibility: 'hidden'
+        }
+      },
       spin: {
         to: {
           transform: 'rotate(360deg)',
