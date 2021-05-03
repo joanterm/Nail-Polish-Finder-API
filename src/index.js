@@ -43,3 +43,8 @@ searchBar.addEventListener("keyup", (e) => {
 })
 
 
+window.addEventListener("load", () => {
+    const preload = document.querySelector("#preload");
+    preload.style.opacity = "0"
+    preload.style.pointerEvents = "none"
+})
