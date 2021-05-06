@@ -17,7 +17,7 @@ fetchData();
 const displayPolish = (polishes) => {
     const polishInfo = polishes.map((polish) => {
         return `
-                <div class="bg-white border border-pink-100 shadow-lg p-4 m-4 w-72">
+                <div class="bg-white border border-pink-100 shadow-lg p-4 m-2 w-40 md:p-4 md:m-4 md:w-72">
                     <img src="${polish.image_link}" class="object-scale-down h-48 w-full"/>
                     <div class="text-center font-medium mt-2">
                         <h1>${polish.brand.toUpperCase()}</h1>
