@@ -1,6 +1,6 @@
 const displayPolishArea = document.querySelector("#display-polish-area")
 const searchBar = document.querySelector("#search-bar")
-const nailPolishAPI = "http://makeup-api.herokuapp.com/api/v1/products.json?product_type=nail_polish"
+const nailPolishAPI = "https://makeup-api.herokuapp.com/api/v1/products.json?product_type=nail_polish"
 
 
 
