@@ -22,6 +22,7 @@ tl.from("#main", {
     duration: 2, 
     opacity: 0,
     }, "-=3")
+
     
 
 gsap.from(["#trends", "#trends-info"], {
@@ -47,4 +48,7 @@ gsap.from(["#collection"], {
     // ease:"power1"
 
 })
+
+
+
 

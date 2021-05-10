@@ -13,11 +13,10 @@
 <body class="text-gray-800 font-Questrial">
 
 <!-- NAVIGATION -->
-
-    <nav class="bg-pink-50">
+    <nav class="bg-pink-50" id="nav">
         <div class="max-w-7xl mx-auto">
           <div class="flex justify-between items-center">
-            <a href="#">
+            <a href="#nav">
                 <svg id="logo" class="py-2 m-2" id="Capa_1" enable-background="new 0 0 512 512" height="80" viewBox="0 0 512 512" width="80" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="512" y2="0"><stop offset="0" stop-color="#ffc8d1"/><stop offset="1" stop-color="#fff6f7"/></linearGradient><linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="105" y2="407"><stop offset="0" stop-color="#fd3a84"/><stop offset="1" stop-color="#ffa68d"/></linearGradient><g><g><circle cx="256" cy="256" fill="url(#SVGID_1_)" r="256"/></g><g><g><path d="m380.574 254.898-17.765-142.118c-.555-4.441-4.337-7.781-8.813-7.781h-35.53c-4.476 0-8.258 3.34-8.813 7.781l-17.765 142.118c-.321 2.524.469 5.074 2.151 6.983 1.691 1.908 4.112 3.001 6.662 3.001h26.647v53.294c-4.077 0-7.625 2.776-8.614 6.731l-17.765 71.059c-.668 2.654-.069 5.465 1.614 7.616 1.683 2.16 4.268 3.417 7 3.417h53.294c2.732 0 5.317-1.258 7-3.417 1.683-2.151 2.281-4.962 1.613-7.616l-17.765-71.059c-.989-3.956-4.537-6.731-8.614-6.731v-53.294h26.647c2.55 0 4.97-1.093 6.662-3.001 1.685-1.908 2.475-4.458 2.154-6.983zm-168.696 54.396c-14.694 0-26.647 11.953-26.647 26.647s11.953 26.647 26.647 26.647 26.647-11.953 26.647-26.647-11.953-26.647-26.647-26.647zm26.578-196.513c-.555-4.441-4.337-7.781-8.813-7.781h-35.53c-4.476 0-8.258 3.34-8.813 7.781l-16.792 134.337h86.74zm32.422 152.101h-118.555c-8.867 9.858-17.921 24.148-20.316 43.31-4.684 37.438 17.435 91.079 18.381 93.343 1.379 3.305 4.615 5.465 8.197 5.465h105.998c3.583 0 6.818-2.16 8.197-5.465.945-2.264 23.064-55.905 18.38-93.343-2.392-19.131-11.425-33.449-20.282-43.31zm-59 115.471c-24.487 0-44.412-19.925-44.412-44.412s19.925-44.412 44.412-44.412 44.412 19.925 44.412 44.412-19.925 44.412-44.412 44.412z" fill="url(#SVGID_2_)"/></g></g></g></svg>
             </a>
             <div class="hidden md:block space-x-5">
@@ -25,7 +24,7 @@
                 <a id="trends-btn" class="text-2xl hover:text-pink-500" href="#trends">Trends</a>
                 <a class="text-2xl hover:text-pink-500" href="#collection">Collection</a>
             </div>
-            <!-- MOBILE -->
+        <!-- MOBILE/HAMBURGER -->
             <div class="md:hidden">
                 <button class="hamburger-icon">
                     <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,19 +33,20 @@
                 </button>
             </div>
           </div>
-            <!-- MOBILE MENU -->
-          <div class="mobile-menu hidden sm:hidden border border-red-300 w-64">
-            <a class="text-right block py-2 px-4 text-sm " href="#">Mission</a>
-            <a class="text-right block py-2 px-4 text-sm " href="#">Trends</a>
-            <a class="text-right block py-2 px-4 text-sm " href="#">Collection</a>
-          </div>
+
+        <!-- MOBILE MENU -->
+            <div class="mobile-menu hidden bg-white md:hidden w-full">
+                <a class="text-right block py-2 px-4 text-md hover:text-pink-500" href="#mission">Mission</a>
+                <a class="text-right block py-2 px-4 text-md hover:text-pink-500" href="#trends">Trends</a>
+                <a class="text-right block py-2 px-4 text-md hover:text-pink-500" href="#collection">Collection</a>
+            </div>
         </div>
     </nav>
 
 <!-- MAIN -->
     <div class="md:flex justify-end">
         <div class="w-screen p-10 flex flex-col justify-center md:pl-48">
-            <div id="main" class="text-4xl md:text-5xl mb-8 font-bold text-pink-500">NAILSPRESS YOURSELF.</div>
+            <div id="main" class=" text-4xl md:text-5xl mb-8 font-bold text-pink-500">NAILSPRESS YOURSELF.</div>
             <div class="text-xl md:text-2xl mb-8">Created for nail-trend lovers, for art lovers. For you.</div>
             <button class="font-medium font-semibold bg-purple-100 hover:bg-purple-200 mt-4 px-6 py-3 md:px-8 py-4 w-40 rounded-md" onClick="window.location.href='#collection'">Explore</button>
         </div>
@@ -84,7 +84,7 @@
     <!-- TRENDS SECTION -->
     <div class="w-9/12 max-w-7xl mx-auto leading-relaxed">
         <div id="trends" class="py-24 text-3xl md:text-4xl text-pink-500 font-medium">TRENDS.</div>
-        <div id="trends-info" class="mb-8 text-xl md:text-2xl">Nail design trends are constantly evolving. We stay up to date by attending yearly Nail Masters fashion shows. Looking for an inspiration? Look no more.</div>
+        <div id="trends-info" class="mb-8 text-xl md:text-2xl">Nail design trends are constantly evolving. We stay up to date by attending yearly Nail Expert fashion show. Looking for an inspiration? Look no more.</div>
         <!-- <svg class="w-20 h-20" id="Capa_1" fill="pink" enable-background=" 0 0 511.795 511.795" height="512" viewBox="0 0 511.795 511.795" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m88.554 484.149h-81.054c-4.143 0-7.5-3.357-7.5-7.5s3.357-7.5 7.5-7.5h81.054c49.222 0 86.523-5.818 114.034-17.786 23.176-10.083 40.029-24.497 52.263-44.875h-89.205c-28.692 0-51.068-24.37-54.021-57.661h-104.125c-4.143 0-7.5-3.357-7.5-7.5s3.357-7.5 7.5-7.5h111.294c36.385 0 68.252-12.816 92.155-37.064l55.33-56.253-32.639-32.86c-1.747-1.759-2.512-4.268-2.044-6.702.469-2.435 2.11-4.48 4.385-5.466 7.005-3.033 13.641-5.879 19.961-8.591 28.948-12.417 51.813-22.226 72.894-34.129 3.607-2.033 8.183-.763 10.219 2.844s.764 8.182-2.844 10.219c-21.791 12.304-44.987 22.254-74.354 34.852-3.189 1.368-6.459 2.771-9.815 4.214l82.14 82.697c35.133-80.748 54.336-118.598 118.224-182.487l40.637-40.636c2.57-2.571 3.933-6.129 3.736-9.763-.199-3.682-1.913-7-4.826-9.344-4.992-4.014-12.653-3.406-17.443 1.385l-40.636 40.636c-27.71 27.709-49.656 46.761-71.16 61.775-3.398 2.373-8.073 1.541-10.443-1.855-2.371-3.396-1.54-8.072 1.855-10.443 20.756-14.491 42.079-33.021 69.14-60.083l40.634-40.639c10.299-10.296 26.399-11.355 37.451-2.465 6.186 4.975 9.978 12.346 10.403 20.222.426 7.881-2.528 15.601-8.106 21.179l-40.638 40.637c-64.562 64.563-82.243 102.024-119.472 187.995-.989 2.283-3.046 3.928-5.491 4.39-2.442.458-4.96-.319-6.713-2.085l-33.345-33.571c-8.829 8.946-30.214 30.574-55.466 55.827-1.916 1.915-3.771 3.77-5.566 5.564h59.249c9.432 0 17.106 7.665 17.11 17.086.004 13.905-3.688 26.987-10.394 36.838-7.441 10.928-18.018 17.263-30.788 18.509-28.15 54.536-83.427 77.889-183.58 77.889zm38.151-135.517c2.474 21.8 16.045 42.855 38.94 42.855h101.578c.101-.002.201-.002.302 0 9.787-.041 17.523-4.139 22.999-12.18 4.956-7.278 7.796-17.626 7.793-28.391 0-1.152-.947-2.091-2.11-2.091h-74.26c-18.829 18.807-27.629 27.557-27.742 27.669-2.937 2.922-7.686 2.908-10.606-.03-2.921-2.938-2.907-7.687.03-10.606.141-.14 13.614-13.537 42.984-42.9l-10.435-10.436c-24.03 21.797-55.312 34.422-89.473 36.11zm100.148-46.648 10.366 10.366c22.989-23.02 42.071-42.321 50.2-50.558l-10.568-10.641z"/></g></svg> -->
         <!-- SWIPER SLIDER SECTION -->
             <div class="swiper-container mb-24">

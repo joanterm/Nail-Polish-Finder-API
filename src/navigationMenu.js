@@ -4,3 +4,4 @@ const mobileMenu = document.querySelector(".mobile-menu")
 hamburgerIcon.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden")
 })
+
