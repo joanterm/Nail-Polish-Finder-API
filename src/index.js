@@ -17,16 +17,15 @@ fetchData();
 const displayPolish = (polishes) => {
     const polishInfo = polishes.map((polish) => {
         return `
-                <div class="bg-white border border-pink-100 shadow-lg p-4 m-2 w-40 md:p-4 md:m-4 md:w-72">
-                    <img src="${polish.image_link}" class="object-scale-down h-48 w-full"/>
-                    <div class="text-center font-medium mt-2">
+                <div class="bg-white shadow-lg p-2 m-2 w-32 md:p-4 md:m-4 sm:w-48 lg:w-72">
+                    <img src="${polish.image_link}" class="object-scale-down h-24 md:h-48 w-full"/>
+                    <div class="text-center text-sm md:text-lg mt-2">
                         <h1>${polish.brand.toUpperCase()}</h1>
                         <p>$ ${polish.price}</p>
                         <button class="bg-pink-100 hover:bg-pink-200 mt-4 px-4 py-2 rounded-md"><a href=${polish.product_link}>SHOP</button>
                     </div>
-                </div>
-        
-        `    
+                </div>  
+        `  
     })//.join("")
     displayPolishArea.innerHTML = polishInfo
 
@@ -41,6 +40,8 @@ searchBar.addEventListener("keyup", (e) => {
     console.log(filteredPolish)
     displayPolish(filteredPolish)
 })
+
+
 
 
 
