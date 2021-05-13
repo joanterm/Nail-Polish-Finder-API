@@ -22,11 +22,11 @@ const displayPolish = (polishes) => {
                     <div class="text-center text-sm md:text-lg mt-2">
                         <h1>${polish.brand.toUpperCase()}</h1>
                         <p>$ ${polish.price}</p>
-                        <button class="bg-pink-100 hover:bg-pink-200 mt-4 px-4 py-2 rounded-md"><a href=${polish.product_link}>SHOP</button>
+                        <button class="bg-pink-100 hover:bg-pink-200 mt-4 px-4 py-2 rounded-md"><a href=${polish.product_link}>SHOP</a></button>
                     </div>
                 </div>  
         `  
-    })//.join("")
+    }).join("")
     displayPolishArea.innerHTML = polishInfo
 
 }
